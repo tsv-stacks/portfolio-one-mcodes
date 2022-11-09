@@ -8,5 +8,33 @@
 </head>
 <body>
     <h1>Contact Me</h1>
+
+    <h3>Lets keep in touch!</h2>
+
+    <p>Please leave your details below and I'll get back to you!</p>
+    <fieldset>
+        <legend>A little about yourself...</legend>
+
+        <label for="name">Name: </label>
+        <input id="name" type="text">
+
+        <label for="email">Email Address: </label>
+        <input id="email" type="email">
+    </fieldset>
+
+    <fieldset>
+        <legend>How can I help you?</legend>
+
+        <input type="radio" name="contact-reason" value="enquiry" checked="checked"> Enquiry
+        <input type="radio" name="contact-reason" value="collab"> Collaboration
+        <input type="radio" name="contact-reason" value="hire-me"> Employment Status
+        <input type="radio" name="contact-reason" value="more-info"> Find out more
+        <input type="radio" name="contact-reason" value="other"> Other
+
+        <br>
+
+        <label for="comments">Additional comments or notes: </label> <br>
+        <textarea id="comments" name="comment-text-box">If there's anything else I need to know please leave a comment here.</textarea>
+    </fieldset>
 </body>
 </html>
