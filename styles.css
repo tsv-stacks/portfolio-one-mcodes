@@ -9,7 +9,7 @@
 
 * {
   box-sizing: border-box;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 html,
@@ -25,10 +25,17 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   background: rgb(50, 50, 50);
   color: var(--turquoise-blue);
   background: var(--eerie-black);
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+
+main {
+  margin-top: 40px;
 }
 
 .links a:hover {
