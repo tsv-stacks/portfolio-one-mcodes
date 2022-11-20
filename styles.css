@@ -61,6 +61,10 @@ nav div ul {
   margin: 0;
 }
 
+nav div ul li {
+  margin-right: 2vw;
+}
+
 main {
   margin-top: 40px;
 }
@@ -73,23 +77,27 @@ main {
   height: 10;
 }
 
-.links button {
+.theme-toggle-button {
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  border-radius: 0.3rem;
   background-color: var(--accent-color);
   color: var(--button-text-color);
   border: none;
   outline: none;
   transition: var(--transition-delay);
-  transform: scale(1);
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 0px solid #000;
+  border-radius: 10px;
 }
 
-.theme-toggle-button:hover,
-.theme-toggle-button:focus {
-  transform: scale(1.1);
+.theme-toggle-button:active {
+  transform: scale(0.9);
+  transition: 0.3s;
 }
 
 .theme-toggle-button .icon {
