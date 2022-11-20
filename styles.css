@@ -36,6 +36,8 @@ body.dark {
   --text-color: whitesmoke;
   --button-text-color: black;
   --transition-delay: 1s;
+
+  transition: var(--transition-delay);
 }
 
 /* Navigation bar */
@@ -52,6 +54,7 @@ nav {
   width: 100vw;
   position: fixed;
   top: 0;
+  transition: var(--transition-delay);
 }
 
 nav div ul {
