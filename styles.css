@@ -191,12 +191,14 @@ table.GeneratedTable thead {
   }
 }
 
-@media (max-width: 420px) {
-  nav {
-    font-size: 12px;
-  }
-
+@media (max-width: 530px) {
   nav button span {
     display: none;
+  }
+}
+
+@media (max-width: 455px) {
+  nav {
+    font-size: 12px;
   }
 }
