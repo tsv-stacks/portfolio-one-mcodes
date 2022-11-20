@@ -17,7 +17,8 @@
 html,
 body {
   margin: 0;
-  padding: 0%;
+  padding: 0;
+  max-width: 100vw;
 }
 
 /* dark mode */
@@ -48,14 +49,16 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 2vw;
+  font-size: calc(15px + 1vw);
+  font-weight: bold;
   background: rgb(50, 50, 50);
   color: var(--turquoise-blue);
   background: var(--background-color);
   width: 100vw;
+  max-width: 100vw;
   position: fixed;
   top: 0;
-  transition: var(--transition-delay);
+  /* transition: var(--transition-delay); */
   border-bottom: 5px solid var(--accent-color);
 }
 
@@ -70,6 +73,7 @@ nav div ul {
 nav div ul li {
   margin-right: 2vw;
   text-decoration: none;
+  display: block;
 }
 
 main {
@@ -98,6 +102,8 @@ main {
   font-weight: bold;
   text-decoration: none;
   padding: 10px 15px;
+  margin-bottom: 5px;
+  margin-top: 5px;
   border: 0px solid #000;
   border-radius: 10px;
 }
@@ -134,6 +140,7 @@ nav p {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--accent-color);
+  /* border-radius: 8px; */
 }
 
 /* Handle on hover */
@@ -144,7 +151,7 @@ nav p {
 /* Homepage */
 
 img {
-  width: 500px;
+  width: 40vw;
 }
 
 table.GeneratedTable {
@@ -167,4 +174,29 @@ table.GeneratedTable th {
 
 table.GeneratedTable thead {
   background-color: #ffcc00;
+}
+
+@media (max-width: 750px) {
+  nav {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .theme-toggle-button {
+    padding: 2px 5px 2px 8px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 420px) {
+  nav {
+    font-size: 12px;
+  }
+
+  nav button span {
+    display: none;
+  }
 }
