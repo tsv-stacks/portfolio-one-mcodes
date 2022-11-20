@@ -4,12 +4,14 @@
   --skobeloff: #0d7377ff;
   --turquoise-blue: #14ffecff;
   --white: #fafafaff;
-  /* font-family: 'Trade Winds', cursive; */
+  /* font-family: 'Archivo Narrow', sans-serif; large headings
+  font-family: 'Julius Sans One', sans-serif; headings
+  font-family: 'Source Sans Pro', sans-serif; text */
 }
 
 * {
   box-sizing: border-box;
-  /* border: 2px solid red; */
+  /* border: 1px solid red; */
 }
 
 html,
@@ -43,7 +45,6 @@ body.dark {
 /* Navigation bar */
 
 nav {
-  font-family: "Trade Winds", cursive;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -55,6 +56,7 @@ nav {
   position: fixed;
   top: 0;
   transition: var(--transition-delay);
+  border-bottom: 5px solid var(--accent-color);
 }
 
 nav div ul {
@@ -67,6 +69,7 @@ nav div ul {
 
 nav div ul li {
   margin-right: 2vw;
+  text-decoration: none;
 }
 
 main {
@@ -114,8 +117,31 @@ main {
 
 nav p {
   margin: 0 auto;
-  font-family: "Trade Winds", cursive;
 }
+
+/* Scroll Bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Homepage */
 
 img {
   width: 500px;

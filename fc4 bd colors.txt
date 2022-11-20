@@ -1,0 +1,10 @@
+--medium-violet-red: #bd0375ff;
+--dark-sky-blue: #76b4d3ff;
+--oxford-blue: #0b1b2fff;
+--sapphire-blue: #0e65a4ff;
+--space-cadet: #2a2644ff;
+--dark-purple: #290625ff;
+--lavender-gray: #cbcad4ff;
+--vivid-sky-blue: #1cc2e0ff;
+--oxford-blue-2: #07233cff;
+--harvest-gold: #ca9244ff;
