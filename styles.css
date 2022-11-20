@@ -45,7 +45,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 2vw;
   background: rgb(50, 50, 50);
   color: var(--turquoise-blue);
   background: var(--background-color);
@@ -56,6 +56,7 @@ nav {
 
 nav div ul {
   display: flex;
+  align-items: center;
   list-style-type: none;
   padding: 0%;
   margin: 0;
