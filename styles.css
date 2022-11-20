@@ -9,7 +9,7 @@
 
 * {
   box-sizing: border-box;
-  /* border: 2px solid red; */
+  border: 2px solid red;
 }
 
 html,
@@ -32,6 +32,13 @@ nav {
   width: 100vw;
   position: fixed;
   top: 0;
+}
+
+nav div ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0%;
+  margin: 0;
 }
 
 main {
