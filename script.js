@@ -1,9 +1,3 @@
-// const checkbox = document.getElementById('checkbox');
-
-// checkbox.addEventListener('change', () => {
-//     document.body.classList.toggle('dark');
-// })
-
 let btnText = document.getElementById('btn-text')
 
 function darktolightbtn() {
@@ -13,3 +7,5 @@ function darktolightbtn() {
         btnText.innerText = "Dark Mode"
     }
 }
+
+document.querySelector('.theme-toggle-button').addEventListener('click', () => document.body.classList.toggle('dark'))

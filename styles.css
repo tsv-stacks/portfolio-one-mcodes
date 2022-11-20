@@ -9,13 +9,33 @@
 
 * {
   box-sizing: border-box;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 html,
 body {
   margin: 0;
   padding: 0%;
+}
+
+/* dark mode */
+
+body {
+  --accent-color: orangered;
+  --background-color: whitesmoke;
+  --text-color: black;
+  --button-text-color: white;
+  --transition-delay: 1s;
+
+  background-color: var(--background-color);
+  transition: var(--transition-delay);
+}
+body.dark {
+  --accent-color: var(--turquoise-blue);
+  --background-color: black;
+  --text-color: whitesmoke;
+  --button-text-color: black;
+  --transition-delay: 1s;
 }
 
 /* Navigation bar */
@@ -28,7 +48,7 @@ nav {
   font-size: 1.5rem;
   background: rgb(50, 50, 50);
   color: var(--turquoise-blue);
-  background: var(--eerie-black);
+  background: var(--background-color);
   width: 100vw;
   position: fixed;
   top: 0;
@@ -43,6 +63,37 @@ nav div ul {
 
 main {
   margin-top: 40px;
+}
+
+.links {
+  display: flex;
+}
+
+.links svg {
+  height: 10;
+}
+
+.links button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  background-color: var(--accent-color);
+  color: var(--button-text-color);
+  border: none;
+  outline: none;
+  transition: var(--transition-delay);
+  transform: scale(1);
+}
+
+.theme-toggle-button:hover,
+.theme-toggle-button:focus {
+  transform: scale(1.1);
+}
+
+.theme-toggle-button .icon {
+  margin-right: 0.3em;
 }
 
 .links a:hover {
