@@ -1,4 +1,9 @@
 :root {
+  --eerie-black: #212121ff;
+  --jet: #323232ff;
+  --skobeloff: #0d7377ff;
+  --turquoise-blue: #14ffecff;
+  --white: #fafafaff;
   /* font-family: 'Trade Winds', cursive; */
 }
 
@@ -20,6 +25,14 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 1.2rem;
+  background: rgb(50, 50, 50);
+  color: var(--turquoise-blue);
+  background: var(--eerie-black);
+}
+
+.links a:hover {
+  color: #ffcc00;
 }
 
 nav p {
