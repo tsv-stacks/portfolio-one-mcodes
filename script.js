@@ -20,3 +20,19 @@ window.addEventListener(
     },
     false
 );
+
+window.onscroll = function () { myFunction() };
+let navbar = document.getElementById("navbar");
+let sticky = navbar.offsetTop;
+let aboutMe = document.getElementById('about-me')
+let homepage = document.getElementById('homepage')
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        aboutMe.classList.add("padding")
+    } else {
+        navbar.classList.remove("sticky")
+        aboutMe.classList.remove("padding")
+    }
+}
