@@ -9,3 +9,14 @@ function darktolightbtn() {
 }
 
 document.querySelector('.theme-toggle-button').addEventListener('click', () => document.body.classList.toggle('dark'))
+
+window.addEventListener(
+    "scroll",
+    () => {
+        document.body.style.setProperty(
+            "--scroll",
+            window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+        );
+    },
+    false
+);
