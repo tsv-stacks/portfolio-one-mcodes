@@ -11,7 +11,7 @@
 
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 html,
@@ -43,9 +43,31 @@ body.dark {
   transition: var(--transition-delay);
 }
 
+/* Homepage */
+
+h1 {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 6rem;
+  color: var(--accent-color);
+  font-weight: lighter;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--text-color);
+}
+
+#homepage img {
+  width: 60vw;
+  border-radius: 5px;
+}
+
 /* Navigation bar */
 
 nav {
+  font-family: "Source Sans Pro", sans-serif;
   display: flex;
   justify-content: space-around;
   align-items: center;
