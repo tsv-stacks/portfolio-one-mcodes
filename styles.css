@@ -45,6 +45,16 @@ body.dark {
 
 /* Homepage */
 
+#homepage {
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
 h1 {
   font-family: "Archivo Narrow", sans-serif;
   font-size: 6rem;
@@ -109,10 +119,6 @@ nav div ul li {
 .padding {
   padding-top: 2.5%;
   transition: 0s;
-}
-
-#homepage {
-  height: 80vh;
 }
 
 /* main {
@@ -265,6 +271,10 @@ table.GeneratedTable thead {
 
   .padding {
     padding-top: 4%;
+  }
+
+  #homepage img {
+    width: 90vw;
   }
 }
 
