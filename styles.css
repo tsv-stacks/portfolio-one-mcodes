@@ -11,7 +11,7 @@
 
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 html,
@@ -28,7 +28,7 @@ body {
   --background-color: whitesmoke;
   --text-color: black;
   --button-text-color: white;
-  --transition-delay: 1s;
+  --transition-delay: 0.5s;
 
   background-color: var(--background-color);
   transition: var(--transition-delay);
@@ -46,6 +46,7 @@ body.dark {
 /* Homepage */
 
 #homepage {
+  transition: 0;
   height: 80vh;
   display: flex;
   flex-wrap: wrap;
@@ -75,6 +76,34 @@ h2 {
 }
 
 /* Navigation bar */
+
+#about-me h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+#about-me img {
+  width: 24vw;
+  height: 60vh;
+  object-fit: cover;
+  /* vertical-align: baseline; */
+}
+
+.about-table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  overflow: hidden;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+.container {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 
 nav {
   font-family: "Source Sans Pro", sans-serif;
@@ -118,12 +147,8 @@ nav div ul li {
 
 .padding {
   padding-top: 2.5%;
-  transition: 0s;
+  transition: 0;
 }
-
-/* main {
-  margin-top: 3vh;
-} */
 
 .links {
   display: flex;
@@ -211,12 +236,6 @@ nav p {
   background: #555;
 }
 
-/* Homepage */
-
-img {
-  width: 40vw;
-}
-
 table.GeneratedTable {
   width: 100%;
   background-color: #ffffff;
@@ -255,6 +274,21 @@ table.GeneratedTable thead {
     margin-bottom: 2px;
     border-radius: 5px;
     justify-content: center;
+  }
+
+  .about-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    /* overflow: hidden; */
+  }
+
+  #about-me img {
+    width: 50vw;
+    height: 25vh;
+    object-fit: cover;
   }
 }
 
