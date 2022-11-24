@@ -78,6 +78,7 @@ h2 {
 /* Navigation bar */
 
 #about-me h2 {
+  /* padding-top: 10%; */
   text-align: center;
   font-size: 3rem;
 }
@@ -86,7 +87,8 @@ h2 {
   width: 24vw;
   height: 60vh;
   object-fit: cover;
-  /* vertical-align: baseline; */
+  /* display: inline-block; */
+  transition: 0.5s ease;
 }
 
 .about-table {
@@ -95,14 +97,52 @@ h2 {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  overflow: hidden;
-  margin-left: 3vw;
-  margin-right: 3vw;
+  /* overflow: hidden; */
+  /* margin: 0 auto; */
+  margin-left: 1vw;
 }
 
 .container {
-  margin-bottom: 0;
-  padding-bottom: 0;
+  position: relative;
+  width: 100%;
+}
+
+.container .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* width: 100%; */
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.4;
+}
+
+.container:hover .middle {
+  opacity: 0.8;
+}
+
+.text {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: var(--skobeloff);
+  color: white;
+  font-size: 16px;
+  padding: 4px 10px;
+  width: 20vw;
 }
 
 nav {
@@ -123,6 +163,7 @@ nav {
   /* transition: var(--transition-delay); */
   border-top: 5px solid var(--accent-color);
   border-bottom: 5px solid var(--accent-color);
+  z-index: 1;
 }
 
 nav div ul {
@@ -258,6 +299,32 @@ table.GeneratedTable thead {
   background-color: #ffcc00;
 }
 
+@media (max-width: 850px) {
+  .about-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    margin-right: 1vw;
+    overflow: hidden;
+  }
+
+  #about-me img {
+    width: 50vw;
+    height: 25vh;
+    object-fit: cover;
+    vertical-align: bottom;
+  }
+
+  .text {
+    left: 45%;
+    font-size: 16px;
+    padding: 4px 10px;
+    width: 40vw;
+  }
+}
+
 @media (max-width: 750px) {
   nav {
     font-size: 1rem;
@@ -275,30 +342,29 @@ table.GeneratedTable thead {
     border-radius: 5px;
     justify-content: center;
   }
-
-  .about-table {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    /* overflow: hidden; */
-  }
-
-  #about-me img {
-    width: 50vw;
-    height: 25vh;
-    object-fit: cover;
-  }
 }
 
 @media (max-width: 530px) {
   nav button span {
     display: none;
   }
+
+  #about-me img {
+    width: 50vw;
+    height: 40vh;
+  }
 }
 
 @media (max-width: 455px) {
+  .about-table {
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
   nav {
     font-size: 12px;
   }
