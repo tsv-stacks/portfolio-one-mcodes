@@ -130,6 +130,7 @@ h2 {
 
 .text-header {
   color: var(--accent-color);
+  transition: var(--transition-delay);
   position: absolute;
   top: 10%;
   width: 100%;
@@ -141,8 +142,8 @@ h2 {
 
 .text-header h3 {
   /* font-family: "Julius Sans One", sans-serif; */
-  /* font-family: "Source Sans Pro", sans-serif; */
-  font-family: "Archivo Narrow", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: "Archivo Narrow", sans-serif; */
   font-size: 2.5rem;
   font-weight: bolder;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
