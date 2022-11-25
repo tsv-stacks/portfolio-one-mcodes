@@ -335,6 +335,23 @@ table.GeneratedTable thead {
     overflow: hidden;
   }
 
+  .text-header svg {
+    width: 3em;
+    height: 3em;
+  }
+
+  .text-header h3 {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2rem;
+  }
+
+  .text-header h3 br {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
   .middle p {
     margin: 2%;
   }
@@ -389,6 +406,19 @@ table.GeneratedTable thead {
 }
 
 @media (max-width: 455px) {
+  .text-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .text-header br {
+    display: none;
+  }
+
+  .text-header svg {
+    width: 2.5em;
+    height: 2.5em;
+  }
+
   .about-table {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
