@@ -75,7 +75,7 @@ h2 {
   border-radius: 5px;
 }
 
-/* Navigation bar */
+/* About Me */
 
 #about-me h2 {
   /* padding-top: 10%; */
@@ -128,8 +128,33 @@ h2 {
   text-align: center;
 }
 
+.text-header {
+  color: var(--accent-color);
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  display: block;
+  left: 0%;
+  align-items: center;
+  text-align: center;
+}
+
+.text-header h3 {
+  /* font-family: "Julius Sans One", sans-serif; */
+  /* font-family: "Source Sans Pro", sans-serif; */
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
 .container:hover .image {
   opacity: 0.4;
+}
+
+.container:hover .text-header > h3 {
+  opacity: 0;
 }
 
 .container:hover .middle {
@@ -140,9 +165,9 @@ h2 {
   font-family: "Source Sans Pro", sans-serif;
   background-color: var(--skobeloff);
   color: white;
-  font-size: 16px;
+  font-size: 20px;
   padding: 4px 10px;
-  width: 20vw;
+  width: 22vw;
 }
 
 nav {
@@ -310,6 +335,10 @@ table.GeneratedTable thead {
     overflow: hidden;
   }
 
+  .middle p {
+    margin: 2%;
+  }
+
   #about-me img {
     width: 50vw;
     height: 25vh;
@@ -320,7 +349,7 @@ table.GeneratedTable thead {
   .text {
     left: 45%;
     font-size: 16px;
-    padding: 4px 10px;
+    padding: 2px 4px;
     width: 40vw;
   }
 }
@@ -347,6 +376,10 @@ table.GeneratedTable thead {
 @media (max-width: 530px) {
   nav button span {
     display: none;
+  }
+
+  .middle p {
+    margin: 1%;
   }
 
   #about-me img {
