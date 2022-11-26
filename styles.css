@@ -4,6 +4,7 @@
   --skobeloff: #0d7377ff;
   --turquoise-blue: #14ffecff;
   --white: #fafafaff;
+  --dark-purple: #290625ff;
   /* font-family: 'Archivo Narrow', sans-serif; large headings
   font-family: 'Julius Sans One', sans-serif; headings
   font-family: 'Source Sans Pro', sans-serif; text */
@@ -11,7 +12,7 @@
 
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 html,
@@ -73,11 +74,14 @@ h2 {
 #homepage img {
   width: 60vw;
   border-radius: 5px;
+  max-width: 864px;
+  max-height: 573px;
 }
 
 /* About Me */
 
-#about-me h2 {
+#about-me h2,
+#skills h2 {
   /* padding-top: 10%; */
   text-align: center;
   font-size: 3rem;
@@ -87,7 +91,6 @@ h2 {
   width: 24vw;
   height: 60vh;
   object-fit: cover;
-  /* display: inline-block; */
   transition: 0.5s ease;
 }
 
@@ -204,6 +207,14 @@ nav div ul li {
   margin-right: 2vw;
   text-decoration: none;
   display: block;
+}
+
+nav div ul li a {
+  color: var(--accent-color);
+}
+
+nav div p {
+  color: var(--text-color);
 }
 
 .sticky {
