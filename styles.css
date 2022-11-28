@@ -12,7 +12,7 @@
 
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 html,
@@ -74,8 +74,8 @@ h2 {
 #homepage img {
   width: 60vw;
   border-radius: 5px;
-  max-width: 864px;
-  max-height: 573px;
+  max-width: 600px;
+  /* max-height: 573px; */
 }
 
 /* About Me */
