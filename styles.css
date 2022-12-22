@@ -12,7 +12,7 @@
 
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 html,
@@ -66,11 +66,6 @@ h1 {
   margin-bottom: 0;
 }
 
-h2 {
-  font-family: "Source Sans Pro", sans-serif;
-  color: var(--text-color);
-}
-
 #homepage img {
   width: 60vw;
   border-radius: 5px;
@@ -80,9 +75,9 @@ h2 {
 
 /* About Me */
 
-#about-me h2,
-#skills h2 {
-  /* padding-top: 10%; */
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--text-color);
   text-align: center;
   font-size: 3rem;
 }
@@ -336,7 +331,16 @@ table.GeneratedTable thead {
   background-color: #ffcc00;
 }
 
+/* Projects */
+
+#projects {
+  padding-top: 6vh;
+}
+
 @media (max-width: 850px) {
+  h3 {
+    font-weight: 2rem;
+  }
   .about-table {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -403,6 +407,10 @@ table.GeneratedTable thead {
 }
 
 @media (max-width: 530px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
   nav button span {
     display: none;
   }
