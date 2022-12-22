@@ -337,6 +337,23 @@ table.GeneratedTable thead {
   padding-top: 6vh;
 }
 
+/* flickity carousel */
+
+.main-carousel {
+  /* height: 60vh; */
+  background-color: white;
+}
+
+.carousel-cell {
+  width: 80%;
+  height: 100%;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 3px solid var(--accent-color);
+  background: var(--background-color);
+}
+
+/* media queries */
 @media (max-width: 850px) {
   h3 {
     font-weight: 2rem;
