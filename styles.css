@@ -12,7 +12,7 @@
 
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 html,
@@ -337,11 +337,67 @@ table.GeneratedTable thead {
   padding-top: 6vh;
 }
 
+.project-title {
+  text-align: center;
+  font-family: "Archivo Narrow", sans-serif;
+  text-decoration: underline;
+}
+
+.project-img-cont {
+  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 10px;
+  margin: auto;
+}
+
+.builtwith {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+.builtwith iconify-icon {
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+.project-icons {
+  text-align: center;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.builtwith p {
+  margin-bottom: 5px;
+}
+
+.carousel-cell img {
+  width: 100%;
+  max-width: 315px;
+  border-radius: 5px;
+  border: 1px solid var(--accent-color);
+}
+
+.project-details {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 5px 10px;
+  margin: 0 auto;
+  border-top: 1px solid var(--text-color);
+  text-align: center;
+  max-width: 500px;
+}
+
 /* flickity carousel */
 
 .carousel {
   /* height: 60vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: white;
+  color: var(--text-color);
 }
 
 .carousel-cell {
@@ -350,10 +406,6 @@ table.GeneratedTable thead {
   border-radius: 10px;
   border: 3px solid var(--accent-color);
   background: var(--background-color);
-}
-
-.carousel-cell img {
-  max-width: 60%;
 }
 
 /* media queries */
@@ -450,6 +502,10 @@ table.GeneratedTable thead {
     font-size: 1.5rem;
   }
 
+  .project-img-cont {
+    flex-direction: column;
+  }
+
   .text-header br {
     display: none;
   }
@@ -462,7 +518,6 @@ table.GeneratedTable thead {
   .about-table {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
-    /* grid-column-gap: 3px; */
     grid-row-gap: 5px;
   }
 
