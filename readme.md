@@ -6,13 +6,13 @@ Here you are able to see all of my projects I made during my journey of learning
 
 ## Features to Add:
 
-[ ] Scroll Triggered Animation
-https://css-tricks.com/scroll-triggered-animation-vanilla-javascript/
+- [ ] Scroll Triggered Animation
+      https://css-tricks.com/scroll-triggered-animation-vanilla-javascript/
 
-[ ] Add projects, update readme and style carousel
+- [ ] Add projects, update readme and style carousel
 
-[ ] Make carousel images all the same size and center
+- [ ] Make carousel images all the same size and center
 
-[ ] Skills section
+- [ ] Skills section
 
-[ ] Contact Me links & Form
+- [ ] Contact Me links & Form
