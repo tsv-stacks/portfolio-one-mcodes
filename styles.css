@@ -12,14 +12,13 @@
 
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  /* max-width: 100vw; */
 }
 
 /* dark mode */
@@ -353,6 +352,9 @@ table.GeneratedTable thead {
 }
 
 .builtwith {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   font-weight: bold;
   font-family: "Archivo Narrow", sans-serif;
@@ -365,10 +367,15 @@ table.GeneratedTable thead {
 
 .project-icons {
   text-align: center;
-  margin-right: 10px;
   font-size: 20px;
 }
 
+.icon-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 5px;
+}
 .builtwith p {
   margin-bottom: 5px;
 }
@@ -378,6 +385,7 @@ table.GeneratedTable thead {
   max-width: 315px;
   border-radius: 5px;
   border: 1px solid var(--accent-color);
+  vertical-align: bottom;
 }
 
 .project-details {
