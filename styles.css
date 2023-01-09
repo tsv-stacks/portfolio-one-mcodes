@@ -416,6 +416,11 @@ table.GeneratedTable thead {
   background: var(--background-color);
 }
 
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
 /* media queries */
 @media (max-width: 850px) {
   h3 {
