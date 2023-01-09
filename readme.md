@@ -10,7 +10,7 @@ Here you are able to see all of my projects I made during my journey of learning
       https://css-tricks.com/scroll-triggered-animation-vanilla-javascript/
 
 - [ ] Add projects, update readme and style carousel
-
+- [ ] Remove pages folder and update navbar links
 - [ ] Make carousel images all the same size and center
 
 - [ ] Skills section
